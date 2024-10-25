@@ -1,5 +1,5 @@
 # Javascript Kelompok 2 Educourse
-Penggunakan jQuery dan layout ke dalam kode [tugas sebelumnya](https://github.com/muhamadrofii/JQuery-kelompok-2-Educourse)
+Penggunakan jQuery, layout, Web Design Rules,dan Frameworks ke dalam kode [tugas sebelumnya](https://github.com/muhamadrofii/JQuery-kelompok-2-Educourse)
 
 
 
