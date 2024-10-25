@@ -139,3 +139,27 @@ body {
   .social-icons a svg {
     margin-right: 8px;
   }
+
+@media (max-width: 768px) {
+  .news-category button {
+    display: block;
+    margin: 10px auto;
+    width: 80%; 
+  }
+
+  .news-section {
+    justify-content: center;
+  }
+
+  .news-card {
+    width: 90%; 
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .news-card {
+    width: 100%;
+    margin: 10px 0;
+  }
+}

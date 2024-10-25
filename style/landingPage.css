@@ -1,8 +1,14 @@
+* {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
 .navbar .container-fluid{
     padding: 1.4rem 7%;
-    background-color: #ffffff;
-    border-bottom: 2px solid #F2DD72;
-    position: relative;
+    background-color: rgba(255, 255, 255, 0.7);
+    /* border-bottom: 2px solid #F2DD72; */
+    position: fixed;
     top: 0;
     z-index: 9999;
     transition: top 0.3s; 
@@ -21,33 +27,59 @@
   transform: translateY(-50%);
 }
 
-/* CSS untuk tombol panah ke atas */
-.scroll-to-top {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  display: none; /* Sembunyikan tombol secara default */
-  background-color: #f39c12; /* Warna latar belakang */
-  color: white; /* Warna teks */
-  border: none;
-  border-radius: 50%;
-  padding: 10px;
-  cursor: pointer;
-  z-index: 1000; /* Pastikan tombol berada di atas elemen lain */
-}
-
-.scroll-to-top:hover {
-  background-color: #e67e22; /* Warna saat hover */
+/* Navbar ketika di-scroll */
+.navbar.scrolled {
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-bottom: 2px solid #F2DD72;
 }
 
 .home-section{
     margin-top: 5rem;
 }
 .home-section p{
-
-        font-family: 'CustomFont', sans-serif !important;
-      
+  font-family: "Nunito", sans-serif;
+  font-size: 10px;
+  margin-top: 10px;
+  font-style: normal;
 }
+
+.banner  {
+  height: 90vh;
+  background: url(../assets/img/banner.jpg) no-repeat center center;
+  background-size: cover;
+  position: relative;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 75px;
+
+}   
+.banner .container::after{
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color:  rgb(255, 202, 200 .6);
+}
+.banner .container h1{
+  color: #fff;
+  z-index: 1;
+  padding: 20px 25px;
+  margin-left: 400px;
+}
+
+.banner .container p{
+  color: #000;
+  z-index: 1;
+  padding: 20px 20px;
+  margin-left: 400px;
+}
+
+
 .about {
     padding: 4rem 7% 1.4rem;
 }
@@ -110,6 +142,7 @@
 }
 
 .testimonial-card h5 {
+    font-family: "Quicksand", sans-serif;
     font-size: 20px;
     font-weight: bold;
     margin-top: 60px;
@@ -132,6 +165,7 @@
 }
 
 .testimonial-card .testimonial-text {
+    font-family: "Nunito", sans-serif;
     font-size: 14px;
     margin-top: 10px;
     font-style: italic;

@@ -1,38 +1,20 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Quicksand", sans-serif;
     overflow-x: hidden;
     margin: 0;
     padding: 0;
 }
 
-/* CSS untuk tombol panah ke atas */
-.scroll-to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    display: none; /* Sembunyikan tombol secara default */
-    background-color: #f39c12; /* Warna latar belakang */
-    color: white; /* Warna teks */
-    border: none;
-    border-radius: 50%;
-    padding: 10px;
-    cursor: pointer;
-    z-index: 1000; /* Pastikan tombol berada di atas elemen lain */
-  }
-  
-  .scroll-to-top:hover {
-    background-color: #e67e22; /* Warna saat hover */
-  }
-
 .navbar .container-fluid{
     padding: 1.4rem 7%;
-    background-color: #ffffff;
-    border-bottom: 2px solid #F2DD72;
-    position: relative;
+    background-color: rgb(255, 255, 255);
+    /* border-bottom: 2px solid #F2DD72; */
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 9999;
+    transition: background-color 0.5s ease;
 }
 
 .nav-item .nav-link:hover {
@@ -47,22 +29,41 @@ body {
     transform: translateY(-50%);
 }
 
+/* Navbar ketika di-scroll */
+.navbar.scrolled {
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-bottom: 2px solid #F2DD72;
+}
+
 .carousel-inner {
     display: flex;
-    width: 100%; /* Menggunakan 100% untuk responsif */
-    max-width: 900px; /* Maksimal lebar */
-    height: 300px; /* Tinggi tetap */
-    margin: 75px auto 0; /* Margin atas dan bawah otomatis */
-    overflow: hidden; /* Menyembunyikan bagian gambar yang melampaui */
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
 }
 
 .carousel-inner img{
-    width: 100%; /* Mengisi lebar kontainer */
-    height: 100%; /* Mengisi tinggi kontainer */
-    object-fit: cover; /* Memastikan gambar tidak terdistorsi */
-    border-radius: 3%; /* Sudut melengkung */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     margin: 0;
     position: relative;
+}
+
+.carousel-indicators .active {
+  background-color: grey;
+}
+
+#heading-card-hero {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#heading-card-hero span{
+  color: #ff0048;
 }
 
 .card-container {

@@ -19,7 +19,14 @@
   margin: 5px 0 0 0;
   transform: translateY(-50%);
 }
+.faqs{
+  margin-top: 6rem;
+}
 
+#header on{
+  background-color: #fdd835; /* Background kuning saat terbuka */
+  color: black;
+}
 .accordion-button:not(.collapsed) {
     background-color: #fdd835; /* Background kuning saat terbuka */
     color: black;

@@ -1,3 +1,8 @@
+* {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
 body {
   height: 100vh;
   display: flex;
