@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmartBeez</title>
+  <link rel="stylesheet" href="style/videoParents.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light custom-navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="assets/img/logo.png" alt="SmartBeez Logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Videos</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Video Category Section -->
+  <section class="video-category">
+    <h2>Pilih Kategori Video</h2>
+    <button onclick="filterVideos('all')">All</button>
+    <button onclick="filterVideos('parentingDasar')">Parenting Dasar</button>
+    <button onclick="filterVideos('bekalSekolah')">Ide Bekal Sekolah</button>
+    <button onclick="filterVideos('ruangBaca')">Ruang Baca</button>
+  </section>
+
+  <!-- Video Section -->
+  <section class="container video-section" id="videoContainer">
+    <div class="video-card" data-category="parentingDasar" onclick="window.open('https://youtu.be/KXApEYqunMM?si=wBb0E5MCKEsq64PO', '_blank')">
+      <img src="assets/img/family.jpg" alt="Parenting Dasar 1">
+      <h5>Basics of Parenting Part 1</h5>
+    </div>
+
+    <div class="video-card" data-category="parentingDasar" onclick="window.open('https://youtu.be/SC0OdvDlfdM?si=vorLPo5R5H5hnFxh', '_blank')">
+        <img src="assets/img/family.jpg" alt="Parenting Dasar 2">
+        <h5>Basics of Parenting Part 2</h5>
+      </div>
+
+      <div class="video-card" data-category="parentingDasar" onclick="window.open('https://youtu.be/9dyTQ1nTDBI?si=6QcPriiHJ9JlMUkV', '_blank')">
+        <img src="assets/img/family.jpg"alt="Parenting Dasar 3">
+        <h5>Basics of Parenting Part 3</h5>
+      </div>
+
+      <div class="video-card" data-category="parentingDasar" onclick="window.open('https://youtu.be/9dyTQ1nTDBI?si=6QcPriiHJ9JlMUkV', '_blank')">
+        <img src="assets/img/family.jpg"alt="Parenting Dasar 4">
+        <h5>Basics of Parenting Part 4</h5>
+      </div>
+
+      <div class="video-card" data-category="parentingDasar" onclick="window.open(' https://youtu.be/2RUkP8k5PBs?si=lDkjy6t7871f2LRK', '_blank')">
+        <img src="assets/img/family.jpg" alt="Parenting Dasar 5">
+        <h5>Basics of Parenting Part 5</h5>
+      </div>
+
+      <div class="video-card" data-category="parentingDasar" onclick="window.open(' https://youtu.be/yHKN19Q5dgc?si=8DFkSVgQYoBIqf9P', '_blank')">
+        <img src="assets/img/family.jpg" alt="Parenting Dasar 6">
+        <h5>Basics of Parenting Part 6</h5>
+      </div>
+
+    <div class="video-card" data-category="bekalSekolah" onclick="window.open('https://youtu.be/Gtq_w-zIAHo?si=By3V1ZO1kZGB6iBM', '_blank')">
+      <img src="assets/img/bekal_sekolah.jpeg" alt="Bekal Sekolah 1">
+      <h5>Ide Bekal Sekolah Part 1</h5>
+    </div>
+
+    <div class="video-card" data-category="bekalSekolah" onclick="window.open('https://youtu.be/Vhh_3GbQ5t0?si=lAH7av71nD7ANdMF', '_blank')">
+        <img src="assets/img/bekal_sekolah.jpeg" alt="Bekal Sekolah 2">
+        <h5>Ide Bekal Sekolah Part 2</h5>
+      </div>
+
+      <div class="video-card" data-category="bekalSekolah" onclick="window.open('https://youtu.be/NQdDMH4avsg?si=t5j4nZXyrf4ghO8q', '_blank')">
+        <img src="assets/img/bekal_sekolah.jpeg" alt="Bekal Sekolah 3">
+        <h5>Ide Bekal Sekolah Part 3</h5>
+      </div>
+
+    <div class="video-card" data-category="ruangBaca" onclick="window.open('https://youtu.be/ckMIb1J7-Jk?si=ToqUO2d1dfVf42hH', '_blank')">
+      <img src="assets/img/ruang_baca.jpeg" alt="Ruang Baca 1">
+      <h5>Belajar Parenting dan Relationship ala Michelle Obama</h5>
+    </div>
+
+    <div class="video-card" data-category="ruangBaca" onclick="window.open('https://youtu.be/g6Dl9sc6i7w?si=h6EJVOJgVVk1k153', '_blank')">
+        <img src="assets/img/ruang_baca.jpeg" alt="Ruang Baca 2">
+        <h5>Empowered Me (Mother Empowers) by Puty Puar</h5>
+      </div>
+
+    <div class="video-card" data-category="ruangBaca" onclick="window.open('https://youtu.be/c4lc5Qq-F6Y?si=XvlvEmkMFQZhFyvx', '_blank')">
+        <img src="assets/img/ruang_baca.jpeg" alt="Ruang Baca 3">
+        <h5>The Book You Wish Your Parents Had Read</h5>
+      </div>
+
+    <div class="video-card" data-category="ruangBaca" onclick="window.open('https://youtu.be/tCiNAcsx7E0?si=wfNJl86ALhUOqPb5', '_blank')">
+        <img src="assets/img/ruang_baca.jpeg" alt="Ruang Baca 4">
+        <h5>The 5 Love Languages of Children by Gary Chapman</h5>
+      </div>
+      
+  </section>
+
+  <!-- Footer Start -->
+  <footer class="footer">
+    <div class="footer-container">
+        <div class="footer-column">
+            <img src="assets/img/logo_smartbeez.png" alt="Company Logo" class="footer-logo">
+        </div>
+
+        <div class="footer-column">
+            <h3>Tentang Kami</h3>
+            <ul>
+                <li><a href="aboutUs.html">Profil Perusahaan</a></li>
+                <li><a href="index.html#features">Keunggulan</a></li>
+                <li><a href="index.html#faqs">FAQ</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Produk & Layanan</h3>
+            <ul>
+                <li><a href="videoParents.html">Parenting Dasar</a></li>
+                <li><a href="videoParents.html">Perkembangan Anak</a></li>
+                <li><a href="videoParents.html">Nutrisi dan Kesehatan Anak</a></li>
+                <li><a href="videoParents.html">Pola Asuh Positif</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Kantor Kami</h3>
+            <p>Jl. Mandiri, Blok D, No. 64 </p>
+            <p>Tangerang, Indonesia</p>
+            <ul>
+              <li><a href="#"><i data-feather="phone"></i> (+62) 812-1234-5678</a></li>
+              <li><a href="#"><i data-feather="mail"></i> smartbeez@gmail.com</a></li>
+          </ul>          
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="social-icons">
+            <a href="#">
+                <i data-feather="facebook"></i>Facebook
+            </a>
+            <a href="#">
+                <i data-feather="twitter"></i>Twitter
+            </a>
+            <a href="#">
+                <i data-feather="instagram"></i>Instagram
+            </a>
+        </div>
+        <div class="credit">
+          <p class="text-decoration-none p-3"> Created by  <span class="text-warning"> <strong>kelompok 2</strong></span> | &copy; 2024.</p>
+        </div>
+    </div>
+</footer>
+<!-- Footer End -->
+
+  <script>
+    // JavaScript function to filter videos by category
+    function filterVideos(category) {
+      var videos = document.querySelectorAll('.video-card');
+      videos.forEach(function(video) {
+        if (video.getAttribute('data-category') === category || category === 'all') {
+          video.style.display = 'block';
+        } else {
+          video.style.display = 'none';
+        }
+      });
+    }
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
+  <script>feather.replace();</script>
+</body>
+</html>
